@@ -285,19 +285,19 @@ dragify(Main)
 
 -- Additional 
 
-game.Players.LocalPlayer.Chatted:Connect(function(chatted,cmd)
-	if chatted == "/e Reload" then
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+	if msg == "/e Reload" then
 		Cyber:Destroy()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/jaackkiscool/Cyber/main/cyber.lua"))
 	end
 end)
-game.Players.LocalPlayer.Chatted:Connect(function(chatted,cmd)
-	if chatted == "/e Dex" then
+game.Players.LocalPlayer.Chatted:Connect(function(msg2)
+	if msg2 == "/e Dex" then
 		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex Explorer V2.txt"))
 	end
 end)
-game.Players.LocalPlayer.Chatted:Connect(function(chatted,cmd)
-	if chatted == "/e Infinite Yield" then
+game.Players.LocalPlayer.Chatted:Connect(function(msg3)
+	if msg3 == "/e Infinite Yield" or msg == "/e IY" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))
 	end
 end)
