@@ -288,7 +288,7 @@ dragify(Main)
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
 	if msg == "/e Reload" then
 		Cyber:Destroy()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/jaackkiscool/Cyber/main/cyber.lua"))
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/jaackkiscool/Cyber-internal-UI/main/cyber.lua"))
 	end
 end)
 game.Players.LocalPlayer.Chatted:Connect(function(msg2)
